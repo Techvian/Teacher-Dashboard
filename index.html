@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <div id="welcome">🎓 Teacher Management Dashboard</div>
+    <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="container">
+    <div class="card">
+        <h2>📋 Attendance</h2>
+        <p>Mark or review students' daily attendance records.</p>
+        <a href="#" class="btn">Open</a>
+    </div>
+
+    <div class="card">
+        <h2>📢 Notices</h2>
+        <p>Post new announcements or check existing notices.</p>
+        <a href="#" class="btn">Manage</a>
+    </div>
+
+    <div class="card">
+        <h2>📅 Schedule</h2>
+        <p>View and update your weekly class schedule.</p>
+        <a href="#" class="btn">View</a>
+    </div>
+
+    <div class="card">
+        <h2>👨‍🎓 Students</h2>
+        <p>Access student details and performance reports.</p>
+        <a href="#" class="btn">Check</a>
+    </div>
+
+    <div class="card">
+        <h2>📚 Assignments</h2>
+        <p>Upload assignments and check submissions easily.</p>
+        <a href="#" class="btn">Upload</a>
+    </div>
+
+    <div class="card">
+        <h2>💬 Feedback</h2>
+        <p>Read and respond to student or parent feedback.</p>
+        <a href="#" class="btn">View</a>
+    </div>
+    </div>
+
+    <footer>© 2025 School Teacher Management System</footer>
+
+    <script>
+    // Get teacher name from localStorage
+    const name = localStorage.getItem('teacherName');
+    const welcome = document.getElementById('welcome');
+
+    if (name) {
+        welcome.textContent = `🎓 Welcome, ${name}!`;
+    } else {
+      // Redirect to login if no name stored
+        window.location.href = 'login.html';
+    }
+
+    // Logout function
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      localStorage.removeItem('teacherName'); // clear name
+      window.location.href = 'login.html'; // go back to login
+    });
+    </script>
+
+</body>
+</html>
