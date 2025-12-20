@@ -15,6 +15,8 @@ This project is made for learning and practice purposes.
 *(No JavaScript used)*
 
 ## 📂 Project Structure
+
+'''
 Teacher-Dashboard/
 │
 │── index.html                 # Dashboard
@@ -53,7 +55,8 @@ Teacher-Dashboard/
 ├── feedback/
 │   │── feedback.html
 │   │── feedback.css
-│   │── feedback.js
+|── │── feedback.js
+'''
 
 
 
