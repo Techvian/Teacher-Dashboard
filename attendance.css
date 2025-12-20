@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+}
+
+/* Header */
+.header {
+    background: #0a66c2;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Main */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Students */
+.student {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    background: #0a66c2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.secondary {
+    background: #555;
+}

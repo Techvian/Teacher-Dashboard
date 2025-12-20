@@ -2,54 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Attendance</title>
-    <style>
-        body {
-            font-family: Poppins, sans-serif;
-            background: #f4f6fb;
-            padding: 30px;
-        }
-
-        h2 {
-            color: #0a66c2;
-            margin-bottom: 20px;
-        }
-
-        .box {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            max-width: 500px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-        }
-
-        .student {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-
-        button {
-            margin-top: 15px;
-            padding: 10px 18px;
-            background: #0a66c2;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            opacity: 0.9;
-        }
-    </style>
+    <title>Attendance | Teacher Dashboard</title>
+    <link rel="stylesheet" href="attendance.css">
 </head>
 <body>
 
-<h2>Student Attendance</h2>
+<header class="header">
+    <h2>Attendance</h2>
+    <a href="index.html" class="back">← Dashboard</a>
+</header>
 
-<div class="box">
-    <form id="attendanceForm">
+<main class="container">
+    <form id="attendanceForm" class="card">
+
         <div class="student">
             <span>Rahul</span>
             <input type="checkbox" value="Rahul">
@@ -65,9 +30,11 @@
             <input type="checkbox" value="Neha">
         </div>
 
-        <button type="submit">Save Attendance</button>
+        <button type="submit" class="btn">Save Attendance</button>
+        <button type="button" class="btn secondary" onclick="viewAttendance()">View Saved</button>
+
     </form>
-</div>
+</main>
 
 <script>
 document.getElementById("attendanceForm").addEventListener("submit", function(e) {
@@ -80,6 +47,11 @@ document.getElementById("attendanceForm").addEventListener("submit", function(e)
     localStorage.setItem("attendance", JSON.stringify(present));
     alert("Attendance Saved Successfully!");
 });
+
+function viewAttendance() {
+    let data = JSON.parse(localStorage.getItem("attendance")) || [];
+    alert("Present Students: " + (data.length ? data.join(", ") : "None"));
+}
 </script>
 
 </body>
