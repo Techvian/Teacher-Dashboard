@@ -3,74 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Management Dashboard</title>
+    <title>Teacher Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-    <div id="welcome">🎓 Teacher Management Dashboard</div>
-    <button id="logoutBtn">Logout</button>
-    </header>
-
-    <div class="container">
-    <div class="card">
-        <h2>📋 Attendance</h2>
-        <p>Mark or review students' daily attendance records.</p>
-        <a href="#" class="btn">Open</a>
+<header class="header">
+    <h1 class="logo">Teacher Dashboard</h1>
+    <div class="header-right">
+        <span id="welcomeText"></span>
+        <button id="logoutBtn">Logout</button>
     </div>
+</header>
+
+<main class="container">
 
     <div class="card">
-        <h2>📢 Notices</h2>
-        <p>Post new announcements or check existing notices.</p>
-        <a href="#" class="btn">Manage</a>
+        <h2>Attendance</h2>
+        <p>Manage daily student attendance records.</p>
+        <a class="btn" href="#">Open</a>
     </div>
 
     <div class="card">
-        <h2>📅 Schedule</h2>
-        <p>View and update your weekly class schedule.</p>
-        <a href="#" class="btn">View</a>
+        <h2>Notices</h2>
+        <p>Create and manage school announcements.</p>
+        <a class="btn" href="#">Manage</a>
     </div>
 
     <div class="card">
-        <h2>👨‍🎓 Students</h2>
-        <p>Access student details and performance reports.</p>
-        <a href="#" class="btn">Check</a>
+        <h2>Schedule</h2>
+        <p>View and update your class timetable.</p>
+        <a class="btn" href="#">View</a>
     </div>
 
     <div class="card">
-        <h2>📚 Assignments</h2>
-        <p>Upload assignments and check submissions easily.</p>
-        <a href="#" class="btn">Upload</a>
+        <h2>Students</h2>
+        <p>Access student profiles and performance.</p>
+        <a class="btn" href="#">Check</a>
     </div>
 
     <div class="card">
-        <h2>💬 Feedback</h2>
-        <p>Read and respond to student or parent feedback.</p>
-        <a href="#" class="btn">View</a>
+        <h2>Assignments</h2>
+        <p>Upload and review student assignments.</p>
+        <a class="btn" href="#">Upload</a>
     </div>
+
+    <div class="card">
+        <h2>Feedback</h2>
+        <p>View feedback from students and parents.</p>
+        <a class="btn" href="#">View</a>
     </div>
 
-    <footer>© 2025 School Teacher Management System</footer>
+</main>
 
-    <script>
-    // Get teacher name from localStorage
-    const name = localStorage.getItem('teacherName');
-    const welcome = document.getElementById('welcome');
+<footer>
+    © 2025 Teacher Management System | Developed by Ayush Kumar Singh
+</footer>
 
-    if (name) {
-        welcome.textContent = `🎓 Welcome, ${name}!`;
-    } else {
-      // Redirect to login if no name stored
-        window.location.href = 'login.html';
-    }
-
-    // Logout function
-    document.getElementById('logoutBtn').addEventListener('click', () => {
-      localStorage.removeItem('teacherName'); // clear name
-      window.location.href = 'login.html'; // go back to login
-    });
-    </script>
+<script>
+const name = localStorage.getItem("teacherName");
+if (!name) {
+    window.location.href = "login.html";
+}
+document.getElementById("welcomeText").textContent = `Welcome, ${name}`;
+document.getElementById("logoutBtn").onclick = () => {
+    localStorage.clear();
+    window.location.href = "login.html";
+};
+</script>
 
 </body>
 </html>
