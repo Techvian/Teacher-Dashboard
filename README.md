@@ -16,11 +16,45 @@ This project is made for learning and practice purposes.
 
 ## 📂 Project Structure
 Teacher-Dashboard/
-│── index.html
+│
+│── index.html                 # Dashboard
+│── style.css                  # Dashboard CSS
+│
 │── login.html
-│── style.css
 │── login.css
+│
 │── README.md
+│
+├── attendance/
+│   │── attendance.html
+│   │── attendance.css
+│   │── attendance.js
+│
+├── notices/
+│   │── notices.html
+│   │── notices.css
+│   │── notices.js
+│
+├── schedule/
+│   │── schedule.html
+│   │── schedule.css
+│   │── schedule.js
+│
+├── students/
+│   │── students.html
+│   │── students.css
+│   │── students.js
+│
+├── assignments/
+│   │── assignments.html
+│   │── assignments.css
+│   │── assignments.js
+│
+├── feedback/
+│   │── feedback.html
+│   │── feedback.css
+│   │── feedback.js
+
 
 
 ## ▶️ How to Run the Project
