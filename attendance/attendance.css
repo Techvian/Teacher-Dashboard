@@ -60,6 +60,13 @@ body {
     cursor: pointer;
 }
 
+input {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
 .secondary {
     background: #555;
 }
