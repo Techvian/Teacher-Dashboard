@@ -5,7 +5,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+html, body {
+    height: 100%;
+    margin: 0%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background: #f4f6fb;
     color: #333;
 }
