@@ -3,18 +3,18 @@
 A simple **Teacher Dashboard** project created using **HTML and CSS only**.  
 This project is made for learning and practice purposes.
 
-## 🚀 Features
+## Features
 - Teacher dashboard interface
 - Login page design
 - Clean and simple UI
 - Beginner-friendly project
 
-## 🛠️ Technologies Used
+## Technologies Used
 - HTML
 - CSS  
 *(No JavaScript used)*
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Teacher-Dashboard/
@@ -56,24 +56,24 @@ Teacher-Dashboard/
 │   │── feedback.html
 │   │── feedback.css
 |── │── feedback.js
-'''
+```
 
+---
 
-
-## ▶️ How to Run the Project
+## How to Run the Project
 1. Download or clone the repository
 2. Open the project folder
 3. Open `index.html` in any web browser
 
-## 📌 Future Improvements
+## Future Improvements
 - Add JavaScript for interactivity
 - Add backend and database
 - Improve responsiveness
 
-## 🤝 Contributing
+## Contributing
 Contributions are welcome. Feel free to fork the repository and submit pull requests.
 
-## 📧 Contact
+## Author
 **Ayush Kumar Singh**  
 B.Tech AI & Data Science (1st Year)
 
