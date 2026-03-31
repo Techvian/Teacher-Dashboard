@@ -16,7 +16,7 @@ This project is made for learning and practice purposes.
 
 ## 📂 Project Structure
 
-'''
+```text
 Teacher-Dashboard/
 │
 │── index.html                 # Dashboard
