@@ -60,6 +60,22 @@ Teacher-Dashboard/
 
 ---
 
+## Website Screenshots
+
+1. Sign-in page
+![Sign in page](img/01-sign-in-page.png)
+
+2. Sign-up page
+![Sign-up-page](img/04-sign-up-page.png)
+
+3. Main-page Teacher-Dashboard
+![Teacher-Dashboard-page](img/02-Teacher-Dashboard-page.png)
+
+4. Attendance-page
+![Attendance-page](img/03-Attendance-page.png)
+
+---
+
 ## How to Run the Project
 1. Download or clone the repository
 2. Open the project folder
