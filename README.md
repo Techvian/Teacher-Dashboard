@@ -1,7 +1,8 @@
 # Teacher Dashboard
 
-A simple **Teacher Dashboard** project created using **HTML and CSS only**.  
-This project is made for learning and practice purposes.
+A simple **Teacher Dashboard** project created using **HTML and CSS only**.
+It is a web app for managing students and Assignment.  
+- This project is made for learning and practice purposes.
 
 ## Features
 - Teacher dashboard interface
